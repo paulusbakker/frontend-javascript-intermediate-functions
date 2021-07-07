@@ -10,8 +10,8 @@
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
 function getEmailDomain(email) {
-    const pos = email.indexOf("@")
-    const domainName = email.slice(pos + 1)
+    const atPosition = email.indexOf("@")
+    const domainName = email.slice(atPosition + 1)
     console.log(domainName)
 }
 
@@ -28,8 +28,8 @@ getEmailDomain("a.wiersma@outlook.com")
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
 function typeOfEmail(email) {
-    const pos = email.indexOf("@")
-    const domainName = email.slice(pos + 1)
+    const atPosition = email.indexOf("@")
+    const domainName = email.slice(atPosition + 1)
     let typeOfPerson = "Extern"
     if (domainName.includes("novi")) {
         if (domainName.includes("education")) {
