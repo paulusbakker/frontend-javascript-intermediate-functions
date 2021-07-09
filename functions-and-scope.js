@@ -102,8 +102,7 @@ function averageGradeRounded(grades) {
         sum += grades[i]
     }
     let median = sum / grades.length
-    const roundedMedian = Math.round(median * 100) / 100
-    console.log(roundedMedian)
+    console.log(median.toFixed(2))
 }
 
 averageGradeRounded(grades)

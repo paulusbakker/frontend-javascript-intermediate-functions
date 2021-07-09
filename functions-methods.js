@@ -62,13 +62,10 @@ typeOfEmail("a.wiersma@outlook.com")
 
 function checkEmailValidity(email) {
     let valid = false
-    if (email.includes("@")) {
-        if (!(email.includes(",")) && !(email.slice(-1) === ".")) {
-            valid = true
-        }
+    if (email.includes("@") && !email.includes(",") && email.slice(-1) !== ".") {
+        valid = true
     }
     console.log(valid)
-
 }
 
 checkEmailValidity("n.eeken@novi.nl")
